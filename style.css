@@ -5,6 +5,7 @@
         margin: 0;
         padding: 0;
         line-height: 1.2;
+        font-size: 16px;
 }
 
 :root {
@@ -141,3 +142,32 @@ main .inner .btn-cta:hover{
         transform: scale(1.1);
 }
 
+@media screen and (max-width: 500px){
+        *{
+                font-size: 13px;
+        }
+        header{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: .5em;
+        }
+        main{
+                height: 80%;
+        }
+        header ul{
+                margin-top: .5em;
+        }
+        main .inner .headline{
+                font-size: 4rem;
+        }
+        .bg-img{
+                display: none;
+        }
+}
+
+@media screen and (max-width: 330px){
+        *{
+                font-size: 10px;
+        }
+}
